@@ -10,9 +10,12 @@ fetch("https://striveschool-api.herokuapp.com/api/product/" + productId, {
   .then((resp) => resp.json())
   .then((obj) => {
     container.innerHTML = `
-    <img src="${obj.imageUrl}"/>
-    <h1>${obj.name}</h1>
+    <div class="row">
+    <div class="col-8">
+    <img src="${obj.imageUrl}" class="img-fluid object-fit-contain "/></div>
+    <div class="col-4"><h1>${obj.name}</h1>
     <p>${obj.description}</p>
     <p>${obj.price}$</p>
+    </div></div>
     `;
   });

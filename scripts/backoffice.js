@@ -9,7 +9,7 @@ const priceForm = document.getElementById("price");
 const url = objId
   ? "https://striveschool-api.herokuapp.com/api/product/" + objId
   : "https://striveschool-api.herokuapp.com/api/product";
-const submitBtn = document.querySelector("button");
+const submitBtn = document.getElementById("invioBtn");
 const method = objId ? "PUT" : "POST";
 
 window.onload = () => {
