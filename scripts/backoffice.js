@@ -55,15 +55,20 @@ const submitFunction = (event) => {
   })
     .then((resp) => resp.json())
     .then((obj) => {
-      if (productObj) {
-        alert("Risorsa creata");
+      if (objId) {
+        alert("Prodotto modificato!");
         productName.value = "";
         productDescription.value = "";
         brandForm.value = "";
         imageUrlForm.value = "";
         priceForm.value = "";
       } else {
-        alert("Risorsa non creata");
+        alert("Prodotto creato");
+        productName.value = "";
+        productDescription.value = "";
+        brandForm.value = "";
+        imageUrlForm.value = "";
+        priceForm.value = "";
       }
     });
   console.log(productObj);
