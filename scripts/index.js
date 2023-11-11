@@ -21,7 +21,7 @@ async function fetchEx() {
          <h5 class="card-title">${elem.name}</h5>
          <p class="card-text">Descrizione: ${elem.description}</p>
          <p class="card-text">Brand: ${elem.brand}</p>
-         <p class="card-text">Prezzo: ${elem.price}$</p>
+         <p class="card-text">Prezzo: ${elem.price}€</p>
          <a href="./product.html?id=${elem._id}" class="btn btn-primary">Dettagli</a>
          <button class="btn btn-outline-secondary" type="button"  onclick="showBtnGroup(event)">
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
