@@ -107,3 +107,13 @@ const removeProduct = (id) => {
       window.location.reload();
     });
 };
+
+const hideSpinner = (p) => {
+  const spinner = document.querySelector(".spinner-border");
+  if (p) {
+    spinner.classList.add("d-none");
+  }
+};
+window.onload = () => {
+  hideSpinner(true);
+};
