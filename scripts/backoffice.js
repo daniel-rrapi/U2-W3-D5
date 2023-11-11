@@ -57,11 +57,7 @@ const submitFunction = (event) => {
     .then((obj) => {
       if (objId) {
         alert("Prodotto modificato!");
-        productName.value = "";
-        productDescription.value = "";
-        brandForm.value = "";
-        imageUrlForm.value = "";
-        priceForm.value = "";
+        window.location.href = "../index.html";
       } else {
         alert("Prodotto creato");
         productName.value = "";
